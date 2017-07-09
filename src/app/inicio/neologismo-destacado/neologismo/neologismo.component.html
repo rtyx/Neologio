@@ -1,0 +1,4 @@
+<app-palabra [palabra]="palabra"></app-palabra>
+<app-origen [origen]="origen"></app-origen>
+<app-acepcion *ngFor="let acepcion of acepciones; let index = index" [acepcion]="acepcion" [index]="index"></app-acepcion>
+<app-autor *ngFor="let autor of autores" [autor]="autor"></app-autor>

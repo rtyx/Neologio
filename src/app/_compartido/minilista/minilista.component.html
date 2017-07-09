@@ -1,0 +1,9 @@
+<div class="contenedor">
+  <app-cabecera-minilista [titulo]="titulo"></app-cabecera-minilista>
+  <app-fila-minilista *ngFor="let fila of filas"
+                      [autor]="fila.autor"
+                      [enlace]="fila.enlace"
+                      [titulo]="fila.titulo">
+  </app-fila-minilista>
+  <app-pie-minilista></app-pie-minilista>
+</div>
