@@ -23,6 +23,10 @@ import { PieMinilistaComponent } from './_compartido/minilista/pie-minilista/pie
 import { FilaMinilistaComponent } from './_compartido/minilista/fila-minilista/fila-minilista.component';
 import { PeticionesService } from './_servicios/peticiones.service';
 import { PropuestasService } from './_servicios/propuestas.service';
+import { UsuariosService } from './_servicios/usuarios.service';
+import { AjustesComponent } from './ajustes/ajustes.component';
+import { PerfilComponent } from './perfil/perfil.component';
+import { PieComponent } from './_compartido/pie/pie.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +48,10 @@ import { PropuestasService } from './_servicios/propuestas.service';
     MinilistaComponent,
     CabeceraMinilistaComponent,
     PieMinilistaComponent,
-    FilaMinilistaComponent
+    FilaMinilistaComponent,
+    AjustesComponent,
+    PerfilComponent,
+    PieComponent
   ],
   imports: [
     BrowserModule,
@@ -52,7 +59,8 @@ import { PropuestasService } from './_servicios/propuestas.service';
   ],
   providers: [
     PeticionesService,
-    PropuestasService
+    PropuestasService,
+    UsuariosService
   ],
   bootstrap: [AppComponent]
 })

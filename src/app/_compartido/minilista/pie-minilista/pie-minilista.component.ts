@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-pie-minilista',
@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./pie-minilista.component.sass']
 })
 export class PieMinilistaComponent implements OnInit {
+  @Input() enlace;
 
   constructor() { }
 

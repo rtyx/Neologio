@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Propuesta } from '../../_modelos/propuesta.model';
+import { PropuestasService } from '../../_servicios/propuestas.service';
 
 @Component({
   selector: 'app-propuestas-recientes',
@@ -7,41 +9,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PropuestasRecientesComponent implements OnInit {
 
-  minilista = {
-    'titulo': 'Propuestas recientes',
-    'filas': [
-      {
-        'contenido': 'Miau miau miau miau',
-        'autor': 'Mario',
-        'enlace': '#'
-      },
-      {
-        'contenido': 'Miau miau miau miau',
-        'autor': 'Mario',
-        'enlace': '#'
-      },
-      {
-        'contenido': 'Miau miau miau miau',
-        'autor': 'Mario',
-        'enlace': '#'
-      },
-      {
-        'contenido': 'Miau miau miau miau',
-        'autor': 'Mario',
-        'enlace': '#'
-      },
-      {
-        'contenido': 'Miau miau miau miau',
-        'autor': 'Mario',
-        'enlace': '#'
-      }
-    ],
-    'enlace': '#'
-  };
 
-  constructor() { }
+  propuestas: Propuesta[];
+  minilista;
+
+  constructor(private propuestasService: PropuestasService) { }
 
   ngOnInit() {
+    this.propuestas = this.propuestasService.obtenerPropuestas();
+    this.minilista = {
+      'titulo': 'Propuestas recientes',
+      'filas': this.propuestas,
+      'enlace': '/propuestas'
+    };
   }
 
 }

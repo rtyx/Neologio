@@ -2,7 +2,7 @@ import { Usuario } from './usuario.modelo';
 import { Neologismo } from './neologismo.modelo';
 
 export interface Propuesta {
-  titulo: string;
+  titulo?: string;
   autor: Usuario;
   neologismo: Neologismo;
   imagen?: string;

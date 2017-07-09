@@ -4,7 +4,7 @@ import { Usuario } from './usuario.modelo';
 export interface Neologismo {
   palabra: string;
   autores: Usuario[];
-  acepciones: Acepcion[];
-  origen: string;
-  id: string;
+  acepciones?: Acepcion[];
+  origen?: string;
+  id?: string;
 }
