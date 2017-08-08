@@ -3,3 +3,19 @@
   align-items: center
   flex-direction: row
   justify-content: space-around
+
+.cuadrícula
+  display: grid
+  grid-template-columns: 1fr 1fr 1fr 1fr
+  grid-template-rows: 1fr 1fr
+  grid-gap: 20px
+  div
+    border: 1px solid #0FA0CE
+  .cabecera
+    grid-column: 2/4
+  .neologismo-destacado
+    grid-column: 2/4
+  .peticiones-recientes
+    grid-column: 2/3
+  .propuestas-recientes
+    grid-column: 3/4

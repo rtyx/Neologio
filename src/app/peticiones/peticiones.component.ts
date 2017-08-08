@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Peticion } from '../_modelos/peticion.model';
+import { PeticionesService } from '../_servicios/peticiones.service';
 
 @Component({
   selector: 'app-peticiones',
@@ -7,9 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PeticionesComponent implements OnInit {
 
-  constructor() { }
+  peticiones: Peticion[];
+  lista;
+
+  constructor(private peticionesService: PeticionesService) { }
 
   ngOnInit() {
+    this.peticiones = this.peticionesService.obtenerPeticiones();
+    this.lista = {
+      'titulo': 'Peticiones recientes',
+      'filas': this.peticiones,
+      'enlace': '/peticiones'
+    };
   }
 
 }

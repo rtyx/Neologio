@@ -11,6 +11,11 @@ export class PeticionesService {
   peticion3: Peticion ;
   peticion4: Peticion ;
   peticion5: Peticion ;
+  peticion6: Peticion ;
+  peticion7: Peticion ;
+  peticion8: Peticion ;
+  peticion9: Peticion ;
+  peticion10: Peticion ;
   autores: Usuario[];
   peticiones: Peticion[] ;
 
@@ -52,8 +57,14 @@ export class PeticionesService {
       'cuerpo': ''
     };
 
+    this.peticion6 = this.peticion1;
+    this.peticion7 = this.peticion2;
+    this.peticion8 = this.peticion3;
+    this.peticion9 = this.peticion4;
+    this.peticion10 = this.peticion5;
+
     this.peticiones = [
-      this.peticion1, this.peticion2, this.peticion3, this.peticion4, this.peticion5
+      this.peticion1, this.peticion2, this.peticion3, this.peticion4, this.peticion5, this.peticion6, this.peticion7, this.peticion8, this.peticion9, this.peticion10
     ];
   }
 

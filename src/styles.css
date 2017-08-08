@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Abel|IM+Fell+Great+Primer:400,400i');
+@import 'skeleton.css';
+@import 'normalize.css';
 
 a {
   text-decoration: none;

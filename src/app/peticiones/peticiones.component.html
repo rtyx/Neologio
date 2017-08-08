@@ -1,1 +1,10 @@
-<app-cabecera></app-cabecera>
+<div class="container">
+  <app-cabecera></app-cabecera>
+  <app-buscador></app-buscador>
+  <div class="row">
+    <div class="twelve columns">
+      <app-lista [titulo]="lista.titulo" [filas]="lista.filas" [enlace]="lista.enlace"></app-lista>
+    </div>
+  </div>
+</div>
+

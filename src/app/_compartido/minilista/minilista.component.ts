@@ -13,6 +13,7 @@ export class MinilistaComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    this.filas = this.filas.slice(0, 5)
   }
 
 }

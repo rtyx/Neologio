@@ -27,6 +27,12 @@ import { UsuariosService } from './_servicios/usuarios.service';
 import { AjustesComponent } from './ajustes/ajustes.component';
 import { PerfilComponent } from './perfil/perfil.component';
 import { PieComponent } from './_compartido/pie/pie.component';
+import { ListaComponent } from './_compartido/lista/lista.component';
+import { BuscadorComponent } from './_compartido/buscador/buscador.component';
+import { ComentarioComponent } from './_compartido/comentario/comentario.component';
+import { PieListaComponent } from './_compartido/lista/pie-lista/pie-lista.component';
+import { CabeceraListaComponent } from './_compartido/lista/cabecera-lista/cabecera-lista.component';
+import { FilaListaComponent } from './_compartido/lista/fila-lista/fila-lista.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +57,13 @@ import { PieComponent } from './_compartido/pie/pie.component';
     FilaMinilistaComponent,
     AjustesComponent,
     PerfilComponent,
-    PieComponent
+    PieComponent,
+    ListaComponent,
+    BuscadorComponent,
+    ComentarioComponent,
+    PieListaComponent,
+    CabeceraListaComponent,
+    FilaListaComponent
   ],
   imports: [
     BrowserModule,
